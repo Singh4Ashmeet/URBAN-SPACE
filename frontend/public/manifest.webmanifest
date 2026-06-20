@@ -1,0 +1,16 @@
+{
+  "name": "UrbanShield",
+  "short_name": "UrbanShield",
+  "description": "Smart city incident monitoring and deterministic simulation dashboard.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7faf9",
+  "theme_color": "#087669",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

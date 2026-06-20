@@ -1,0 +1,103 @@
+_format_version: "3.0"
+_transform: true
+
+services:
+  - name: core-service-legacy
+    url: http://core-service:8080
+    routes:
+      - name: core-legacy-route
+        paths:
+          - /core
+        strip_path: true
+
+  - name: core-auth
+    url: http://core-service:8080/api/core/auth
+    routes:
+      - name: auth-v1-route
+        paths:
+          - /api/v1/auth
+        strip_path: true
+
+  - name: core-incidents
+    url: http://core-service:8080/api/core/incidents
+    routes:
+      - name: incidents-v1-route
+        paths:
+          - /api/v1/incidents
+        strip_path: true
+
+  - name: core-vehicles
+    url: http://core-service:8080/api/core/vehicles
+    routes:
+      - name: vehicles-v1-route
+        paths:
+          - /api/v1/vehicles
+        strip_path: true
+
+  - name: core-dispatches
+    url: http://core-service:8080/api/core/dispatches
+    routes:
+      - name: dispatches-v1-route
+        paths:
+          - /api/v1/dispatches
+        strip_path: true
+
+  - name: core-dispatch
+    url: http://core-service:8080/api/core/dispatch
+    routes:
+      - name: dispatch-v1-route
+        paths:
+          - /api/v1/dispatch
+        strip_path: true
+
+  - name: core-environment
+    url: http://core-service:8080/api/core/environment
+    routes:
+      - name: environment-v1-route
+        paths:
+          - /api/v1/environment
+        strip_path: true
+
+  - name: core-audit
+    url: http://core-service:8080/api/core/audit
+    routes:
+      - name: audit-v1-route
+        paths:
+          - /api/v1/audit
+        strip_path: true
+
+  - name: core-outbox
+    url: http://core-service:8080/api/core/outbox
+    routes:
+      - name: outbox-v1-route
+        paths:
+          - /api/v1/outbox
+        strip_path: true
+
+  - name: core-simulations
+    url: http://core-service:8080/api/core/simulations
+    routes:
+      - name: simulations-v1-route
+        paths:
+          - /api/v1/simulations
+        strip_path: true
+
+  - name: simulation-service
+    url: http://simulation-service:8000
+    routes:
+      - name: simulation-legacy-route
+        paths:
+          - /simulation
+        strip_path: true
+
+  - name: ai-service
+    url: http://ai-service:8010/api/ai
+    routes:
+      - name: ai-v1-route
+        paths:
+          - /api/v1/ai
+        strip_path: true
+      - name: ai-legacy-route
+        paths:
+          - /ai
+        strip_path: true

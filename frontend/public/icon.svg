@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="UrbanShield icon">
+  <rect width="128" height="128" rx="24" fill="#087669"/>
+  <path d="M64 16l38 16v28c0 25-15 45-38 56-23-11-38-31-38-56V32l38-16z" fill="#ffffff" opacity=".95"/>
+  <path d="M42 78h12V54h20v24h12V42h12v46H30V66h12v12z" fill="#087669"/>
+</svg>

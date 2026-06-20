@@ -1,0 +1,62 @@
+# Environment
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# Java
+target/
+.mvn/wrapper/maven-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js
+node_modules/
+.next/
+.next-*/
+out/
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# UrbanShield local runtime
+.urbanshield/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+.data/
+.obsidian/
+.gitdir/

@@ -1,0 +1,2 @@
+-- Phase 2 schema is managed by Flyway in core-service/src/main/resources/db/migration.
+-- This file remains intentionally minimal so fresh Postgres containers can initialize cleanly.
